@@ -1,0 +1,27 @@
+.next/
+node_modules/
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+out/
+
+# Claude Code project memory
+.claude/
+
+# Private docs
+docs/private/
+
+# Personal operational docs -- contain VPS IPs, SSH config, credentials
+docs/how-to.md
+docs/how-to*.md
+docs/deployment.md
+docs/deploy*.md
+*-checklist.md
+*_CHECKLIST.md
+OPS-*.md
+DEPLOY_NOTES*.md
+*.tsbuildinfo
+
+.vercel

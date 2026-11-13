@@ -1,0 +1,32 @@
+{
+  "name": "hearth",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "prebuild": "node scripts/check-model-ids.mjs && node scripts/check-no-revalidate.mjs",
+    "build": "next build",
+    "start": "next start",
+    "test": "node scripts/check-model-ids.mjs && vitest run",
+    "type-check": "tsc --noEmit",
+    "check:cache": "node scripts/check-no-revalidate.mjs",
+    "check:models": "node scripts/check-model-ids.mjs"
+  },
+  "dependencies": {
+    "epubjs": "^0.3.93",
+    "force-graph": "1.52.0",
+    "next": "15.5.29",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "recharts": "^3.8.1"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.3",
+    "@types/node": "22.19.13",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "jsdom": "^29.1.1",
+    "typescript": "5.9.3",
+    "vitest": "^4.0.18"
+  }
+}
